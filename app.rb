@@ -27,9 +27,13 @@ class App < Sinatra::Base
 # returns the product of the two numbers.
 
   get "/multiply/:num1/:num2" do
-#  binding.pry
      "#{params[:num1].to_i * params[:num2].to_i}" 
-    # return result
+
+# solution:
+#     @product = params[:num1].to_i * params[:num2].to_i
+#   	"#{@product}"
+
+# Cannot we do this?
     # <%= params[:num1].to_i * params[:num2].to_i %>
 
   end
